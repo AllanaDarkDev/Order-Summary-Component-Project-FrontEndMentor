@@ -98,5 +98,6 @@ button:hover {
     body {
         background-image: url(images/pattern-background-desktop.svg);
         background-size: cover;
+        
     }
 }

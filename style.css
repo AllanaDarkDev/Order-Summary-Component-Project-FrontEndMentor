@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    /*Primary*/
+    --Pale-Blue: hsl(225, 100%, 94%);
+    --Bright-Blue: hsl(245, 75%, 52%);
+
+    /*Neutral*/
+    --Very-Pale-Blue: hsl(225, 100%, 98%);
+    --Desaturated-Blue: hsl(224, 23%, 55%);
+    --Dark-Blue: hsl(223, 47%, 23%);
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Red Hat Display", sans-serif;
+    background-color: var(--Pale-Blue);
+    height: 100vh;
+}
+
+main {
+    background-color: white;
+    width: 450px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 14px 30px 0px hsla(223, 47%, 23%, 0.267);
+}
+
+.middle {
+    background-color: var(--Very-Pale-Blue);
+    display: flex;
+    align-items: center;
+    margin: 20px 50px;
+    border-radius: 10px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 110px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.text span {
+    color: var(--Desaturated-Blue);
+}
+
+a {
+    color: var(--Bright-Blue);
+    font-weight: 900;
+}
+
+.icon {
+    margin-left: 10px;
+}
+
+img {
+    border-radius: 20px 20px 0 0;
+}
+
+button {
+    padding: 15px 110px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--Bright-Blue);
+    color: white;
+    font-weight: 600;
+    box-shadow: 0px 18px 25px -12px var(--Desaturated-Blue);
+    transition: 0.3s;
+}
+
+.bottom p {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    color: var(--Desaturated-Blue);
+    margin-bottom: 10px;
+}
+
+.bottom p:hover, button:hover, a:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(245, 83%, 68%);
+}
+
+@media (min-width: 750px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+        background-size: cover;
+    }
+}

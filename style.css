@@ -21,6 +21,11 @@ body {
     height: 100vh;
 }
 
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
 main {
     background-color: white;
     width: 450px;
@@ -78,12 +83,28 @@ button {
     margin-bottom: 30px;
     margin-top: 20px;
     font-weight: 700;
+    transition: 0.3s;
+}
+
+.bottom p:hover {
+    color: black;
 }
 
 p {
+    line-height: 1.5;
     font-size: 16px;
     color: var(--Desaturated-Blue);
+    margin-right: 100px;
+    margin-left: 100px;
     margin-bottom: 10px;
+}
+
+a {
+    transition: 0.3s;
+}
+
+a:hover {
+    color: var(--Desaturated-Blue);
 }
 
 .bottom p:hover, button:hover, a:hover {
@@ -98,6 +119,9 @@ button:hover {
     body {
         background-image: url(images/pattern-background-desktop.svg);
         background-size: cover;
-        
+    }
+    p {
+        margin-right: 50px;
+        margin-left: 50px;
     }
 }
